@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAiCGmhmn76UeVhfnannb7lwAAAAACAAAAAAAQZgAAAAEAACAAAACl0rtd8Qa7TUyExIlVTO+R/zNBn6oMpmyZ+RAZzWLU9QAAAAAOgAAAAAIAACAAAAAJpFzIooCMkk0ebDVvq98iyth5/wlp1hg4qFnY/59l8oAAAAA1NfFhCDTfGXF1/yuf+CjGD7sPCeVffmAV56xQSPIzauCgC1cKptwwz5KmbMOWjJqAn8Olh9e4mWvP01kWhpHsHa+zES4xd//5JgY8gsurTbEnqr1QIB50LACw01WC9MJJuX8dMSV6hmwMFp3P/KJF9iN2fQTS0ZgBaTRTGQaH4kAAAADHysSNdCgFTAcxAOJJd0QZMTGrHqB2WSI1ownfT2FCP1EO4x08j5x5i0NmjYssp/Mb206EyL7eOXrTpSR0ct+F</EncryptedPassword>
+    <History>True|2025-09-07T18:34:55.4233390Z||;True|2025-09-07T23:56:11.6167167+05:30||;True|2025-09-07T20:43:30.8619583+05:30||;True|2025-09-06T21:03:44.1275339+05:30||;True|2025-09-06T21:02:31.5140516+05:30||;True|2025-09-06T21:00:52.3925957+05:30||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DBConn">
+      <Value>Data Source=sql1312.database.windows.net%3bInitial Catalog=DB_SMS%3bUser ID=rahuldb%3bPassword=sql%401234567%3bConnect Timeout=60%3bEncrypt=True%3bTrust Server Certificate=False%3bApplication Intent=ReadWrite%3bMulti Subnet Failover=False</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

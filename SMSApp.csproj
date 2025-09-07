@@ -1,0 +1,115 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\js\AppJs\ControllerMap\ControllerMapForm.js" />
+    <Content Remove="wwwroot\js\AppJs\ControllerMap\ControllerMapView.js" />
+    <Content Remove="wwwroot\js\AppJs\Floor\FloorForm.js" />
+    <Content Remove="wwwroot\js\AppJs\Floor\FloorMapForm.js" />
+    <Content Remove="wwwroot\js\AppJs\Floor\FloorView.js" />
+    <Content Remove="wwwroot\js\AppJs\Role\RoleView.js" />
+    <Content Remove="wwwroot\js\AppJs\SeatBook\SeatBookForm.js" />
+    <Content Remove="wwwroot\js\AppJs\SeatBook\SeatBookView.js" />
+    <Content Remove="wwwroot\js\AppJs\UserAccess\UserAccessForm.js" />
+    <Content Remove="wwwroot\js\AppJs\UserAccess\UserAccessView.js" />
+    <Content Remove="wwwroot\js\UserForm.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\AppJs\ControllerMap\ControllerMapForm.js" />
+    <None Include="wwwroot\js\AppJs\ControllerMap\ControllerMapView.js" />
+    <None Include="wwwroot\js\AppJs\SeatBook\SeatBookForm.js" />
+    <None Include="wwwroot\js\AppJs\SeatBook\SeatBookView.js" />
+    <None Include="wwwroot\js\AppJs\Floor\FloorMapForm.js" />
+    <None Include="wwwroot\js\AppJs\Floor\FloorForm.js" />
+    <None Include="wwwroot\js\AppJs\Floor\FloorView.js" />
+    <None Include="wwwroot\js\AppJs\Role\RoleView.js" />
+    <None Include="wwwroot\js\AppJs\UserAccess\UserAccessForm.js" />
+    <None Include="wwwroot\js\AppJs\UserAccess\UserAccessView.js" />
+    <None Include="wwwroot\js\AppJs\User\UserForm.js" />
+    <None Include="wwwroot\js\AppJs\User\UserView.js" />
+    <None Include="wwwroot\Resx\bootstrap.min.css" />
+    <None Include="wwwroot\Resx\css\animate.min.css" />
+    <None Include="wwwroot\Resx\css\bootstrap-datepicker3.standalone.min.css" />
+    <None Include="wwwroot\Resx\css\font-awesome.css" />
+    <None Include="wwwroot\Resx\css\perfect-scrollbar.css" />
+    <None Include="wwwroot\Resx\css\style.css" />
+    <None Include="wwwroot\Resx\css\sweetalert.css" />
+    <None Include="wwwroot\Resx\fonts\fontawesome-webfont.eot" />
+    <None Include="wwwroot\Resx\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\Resx\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\Resx\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\Resx\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\Resx\fonts\FontAwesome.otf" />
+    <None Include="wwwroot\Resx\Images\BG.png" />
+    <None Include="wwwroot\Resx\Images\blank-user-img.jpg" />
+    <None Include="wwwroot\Resx\Images\Images.jpg" />
+    <None Include="wwwroot\Resx\Images\Images.png" />
+    <None Include="wwwroot\Resx\Images\ImagesV1.jpg" />
+    <None Include="wwwroot\Resx\Images\images_New.jpg" />
+    <None Include="wwwroot\Resx\Images\wi-logo - Copy %282%29.png" />
+    <None Include="wwwroot\Resx\Images\wi-logo - Copy - Copy.png" />
+    <None Include="wwwroot\Resx\Images\wi-logo - Copy.png" />
+    <None Include="wwwroot\Resx\Images\wi-logo - Copy1.png" />
+    <None Include="wwwroot\Resx\Images\wi-logo - Copy2.png" />
+    <None Include="wwwroot\Resx\Images\wi-logo.png" />
+    <None Include="wwwroot\Resx\Images\wi-logo_old.png" />
+    <None Include="wwwroot\Resx\Images\wi-logo_V1 - Copy.png" />
+    <None Include="wwwroot\Resx\Images\wi-logo_V1.png" />
+    <None Include="wwwroot\Resx\Images\wi.png" />
+    <None Include="wwwroot\Resx\Images\writer-information.png" />
+    <None Include="wwwroot\Resx\js\angular.min.js" />
+    <None Include="wwwroot\Resx\js\bootstrap-datepicker.min.js" />
+    <None Include="wwwroot\Resx\js\bootstrap.min.js" />
+    <None Include="wwwroot\Resx\js\buttons.flash.min.js" />
+    <None Include="wwwroot\Resx\js\buttons.html5.min.js" />
+    <None Include="wwwroot\Resx\js\buttons.print.min.js" />
+    <None Include="wwwroot\Resx\js\dataTables.buttons.min.js" />
+    <None Include="wwwroot\Resx\js\jquery-1.11.2.min.js" />
+    <None Include="wwwroot\Resx\js\jquery-3.2.1.min.js" />
+    <None Include="wwwroot\Resx\js\jquery.easing.min.js" />
+    <None Include="wwwroot\Resx\js\jquery.unobtrusive-ajax.min.js" />
+    <None Include="wwwroot\Resx\js\jquery.validate.min.js" />
+    <None Include="wwwroot\Resx\js\jquery.validate.unobtrusive.min.js" />
+    <None Include="wwwroot\Resx\js\jszip.min.js" />
+    <None Include="wwwroot\Resx\js\pace.min.js" />
+    <None Include="wwwroot\Resx\js\pdfmake.min.js" />
+    <None Include="wwwroot\Resx\js\perfect-scrollbar.min.js" />
+    <None Include="wwwroot\Resx\js\popper.min.js" />
+    <None Include="wwwroot\Resx\js\scripts.js" />
+    <None Include="wwwroot\Resx\js\sweetalert-dev.js" />
+    <None Include="wwwroot\Resx\js\vfs_fonts.js" />
+    <None Include="wwwroot\Resx\js\viewportchecker.js" />
+    <None Include="wwwroot\Resx\Style1.css" />
+    <None Include="wwwroot\Resx\_app.js" />
+    <None Include="wwwroot\Uploads\FloorImage\01 - AdminScreenShot.png" />
+    <None Include="wwwroot\Uploads\FloorImage\01.png" />
+    <None Include="wwwroot\Uploads\FloorImage\02 - Homescreen.png" />
+    <None Include="wwwroot\Uploads\FloorImage\03 - UserList.png" />
+    <None Include="wwwroot\Uploads\FloorImage\Screenshot 2023-03-10 105706.png" />
+    <None Include="wwwroot\Uploads\FloorImage\Screenshot 2023-03-10 105719.png" />
+    <None Include="wwwroot\Uploads\FloorImage\Screenshot 2023-03-15 113431.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.Unobtrusive.Ajax" Version="2.0.0" />
+    <PackageReference Include="EnterpriseLibrary.Data" Version="6.0.1304" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.24" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.24">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Practices.EnterpriseLibrary.Common.dll" Version="3.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+</Project>

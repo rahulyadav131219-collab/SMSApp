@@ -1,0 +1,74 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/js/appjs/floor/floorview.js"></script>
+
+<script type="text/javascript">
+
+    function AddFloorUser() {
+        window.location.href = '@Url.Action("New","Floor")';
+        return false;
+    }
+
+</script>
+
+<div ng-controller="FloorViewCtrl">
+    <div class="col-xl-12">
+        <section class="box ">
+            <header class="panel_header">
+                <h2 class="title float-left" style="width:100% !important">
+                    <span>Manage Floors</span>
+                    <button type="button" class="btn btn-xs btn-primary float-right" onclick="AddFloorUser();" style="margin-right:2%">
+                        <span class="fa fa-plus">
+                            Add
+                        </span>
+                    </button>
+                </h2>
+            </header>
+            <div class="content-body">
+                <div class="row">
+                    <div class="col-12">
+                    </div>
+                    <div class="col-12">
+                        <table id="example-11" class="display table table-hover table-condensed" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Sr No</th>
+                                    <th>Floor Id</th>
+                                    <th>Floor Name</th>
+                                    <th>Description</th>
+                                    <th>Revision No.</th>
+                                    <th>CreatedOn</th>
+                                    <th class="text text-center">Map Floor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="item in FloorList">
+                                    <td>
+                                        <span style="cursor:pointer" ng-click="RedirectFloorToEdit(item.FloorId);">
+                                            <i class="fa fa-edit"></i>
+                                        </span>
+                                    </td>
+                                    <td ng-bind="item.RowId"></td>
+                                    <td ng-bind="item.FloorCode"></td>
+                                    <td ng-bind="item.FloorName"></td>
+                                    <td ng-bind="item.FloorDesc"></td>
+                                    <td ng-bind="item.RevNo"></td>
+                                    <td ng-bind="item.CreatedOn"></td>
+                                    <td class="text text-center">
+                                        <span style="cursor:pointer" ng-click="RedirectToMapFloorEdit(item.FloorId);">
+                                            <i class="fa fa-eye"></i>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

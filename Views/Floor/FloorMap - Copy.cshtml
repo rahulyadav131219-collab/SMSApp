@@ -1,0 +1,342 @@
+﻿@model SMSApp.Models.SC.FloorMapSC
+@using System.Security.Claims;
+@using Microsoft.AspNetCore.Mvc.Razor;
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor;
+
+@{
+    ViewBag.Title = "UserRole";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    string? mName = string.Empty;
+
+    mName = Context.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Name)?.Value;
+
+    Microsoft.Extensions.Primitives.StringValues queryVal;
+    string? mType = string.Empty;
+
+    if (Context.Request.Query.TryGetValue("vType", out queryVal))
+    {
+        mType = queryVal.FirstOrDefault();
+    }
+}
+
+<script type="text/javascript">
+    var mType = '@mType';
+</script>
+
+<script src="~/js/appjs/floor/FloorMapForm.js"></script>
+
+<script type="text/javascript">
+
+    function OnFloorMapSuccess() {
+
+        swal({
+            title: "SUCCESS!",
+            text: "Action completed successfully",
+            type: "success",
+            confirmButtonText: "OK"
+        },
+            function (isConfirm) {
+
+                var mFloorId = $("#txtFloorId").val();
+
+                window.location.href = '/Floor/EditMapFloor/' + mFloorId;
+            });
+    }
+
+    function RedirectBack() {
+
+        window.location.href = '@Url.Action("Index","User")';
+
+        return false;
+    }
+
+</script>
+
+<style>
+
+    #container {
+        position: relative;
+    }
+
+    #rect1 {
+        position: absolute;
+        top: 376px;
+        left: 380px;
+        width: 30px;
+        height: 25px;
+        background-color: rgba(0, 0, 255, 0.3);
+        cursor: pointer;
+    }
+
+    .rectangle {
+        position: absolute;
+        width: 30px;
+        height: 25px;
+        background-color: rgba(0, 0, 255, 0.3);
+        cursor: pointer;
+    }
+
+</style>
+
+<div ng-controller="FloorMapFormCtrl">
+    <div class="col-12">
+        <section class="box" style="margin:-15px">
+            <header class="panel_header">
+                @if (Model != null)
+                {
+                    <h2 class="title float-left">Map Floor</h2>
+                }
+
+            </header>
+            <div class="content-body">
+                <div class="row">
+                    <div class="col-6 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <label class="form-label title">フロア名</label>
+                            <div class="controls" id="dvControls" style="margin-top:-15px">
+                                <img id="myImgId" src="@Url.Content(Model.ImagePath)" width="900px" height="500px" />
+                                @*<div id="rect1" class="rectangle" onclick="GetSeatDtls('5')"></div>*@
+                                @*width="900px" height="500px"*@
+                                @*<div id="rect2" class="rectangle" style="top: 422px;"></div>
+                                <div id="rect3" class="rectangle" style="top: 475px;"></div>
+                                <div id="rect4" class="rectangle" style="top: 520px;"></div>
+                                <div id="rect5" class="rectangle" style="top: 565px;"></div>*@
+                                @*<div id="rect6" class="rectangle"></div>*@
+                                @*
+                                <p>X:<span id="x"></span></p>
+                                <p>Y:<span id="y"></span></p>
+                                *@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="dvChairDtls" aria-labelledby="dvChairDtls" class="modal fade" role="dialog"
+         tabindex="-1" data-backdrop="static" aria-modal="true" style="display: none;">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Enter Chair Details</h4>
+                    <button aria-label="Close" class="close" type="button" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                    <form action="/Floor/SaveMapFloor" data-ajax="true" data-ajax-failure="OnFailure"
+                          data-ajax-method="POST" data-ajax-success="OnFloorMapSuccess" id="form0" method="post" enctype="multipart/form-data">
+
+                        <div class="row">
+                            <div class="col-6 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-label title">Width</label>
+                                    <div class="controls">
+                                        @Html.TextBoxFor(model => model.width, new {@id="txtWidth", @class = "form-control", @placeholder = "Enter width", @autocomplete = "off" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-label">Hieght</label>
+                                    <div class="controls">
+                                        @Html.TextBoxFor(model => model.height, new {@id="txtHeight", @class = "form-control", @placeholder = "Enter height", @autocomplete = "off" })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-label title">Dept Name</label>
+                                    <div class="controls">
+                                        <select id="ddlDept" class="form-control" ng-model="DeptId" onchange="OnDeptSel();">
+                                            <option ng-value="'0'">--Select--</option>
+                                            <option ng-selected="DeptId == item.DeptId" ng-repeat="item in DeptList" ng-value="item.DeptId">
+                                                {{item.DeptName}}
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-label">Seat Id</label>
+                                    <div class="controls">
+                                        @Html.TextBoxFor(model => model.SeatID, new { @id="txtSeatId",@class = "form-control", @placeholder = "Enter Seat ID", @autocomplete = "off" })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-label title">Seat Details</label>
+                                    <div class="controls">
+                                        @Html.TextBoxFor(model => model.SeatDetails, new { @id="txtSeatDtls",@class = "form-control", @placeholder = "Enter Seat Details", @autocomplete = "off" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-label">Current X Y</label>
+                                    <div class="controls">
+                                        <span id="spCurrentXY"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-label">Status</label>
+                                    <div class="controls">
+                                        @Html.RadioButtonFor(model => model.IsActive, "1", new { @id = "rdoStatusActive", @checked = "checked" })
+                                        <label class="form-label" for="rdoStatusActive">有効</label>
+                                        @Html.RadioButtonFor(model => model.IsActive, "0", new { @id = "rdoStatusInActive" })
+                                        <label class="form-label" for="rdoStatusInActive">無効</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary btn-sm" type="button" data-dismiss="modal">
+                                <i class="fa fa-remove"></i>
+                                Close
+                            </button>
+                            <button class="btn btn-primary btn-sm" type="submit" onclick="SaveFloorMap();">
+                                <i class="fa fa-save"></i> Save
+                            </button>
+                        </div>
+                        <div>
+                            @Html.HiddenFor(model => model.CurrentX, new { @id = "txtCurrentX"})
+                            @Html.HiddenFor(model => model.CurrentY, new { @id = "txtCurrentY"})
+                            @Html.HiddenFor(model => model.FloorId, new { @id = "txtFloorId"})
+                            @Html.HiddenFor(model => model.FloorAdmId, new { @id = "txtFloorAdmId"})
+                            @Html.HiddenFor(model => model.DeptId, new { @id = "txtDeptId"})
+                            @Html.HiddenFor(model => model.FloorMapJSON, new { @id = "txtFloorJSON"})
+                            @*@Html.HiddenFor(model => model.Id, new { @id = "txtId1"})*@
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        function FindPosition(oElement) {
+
+            if (typeof (oElement.offsetParent) != "undefined") {
+                for (var posX = 0, posY = 0; oElement; oElement = oElement.offsetParent) {
+                    posX += oElement.offsetLeft;
+                    posY += oElement.offsetTop;
+                }
+                return [posX, posY];
+            }
+            else {
+                return [oElement.x, oElement.y];
+            }
+        }
+
+        function GetCoordinates(e) {
+
+            var PosX = 0;
+            var PosY = 0;
+            var ImgPos;
+
+            ImgPos = FindPosition(myImg);
+
+            if (!e) var e = window.event;
+
+            if (e.pageX || e.pageY) {
+                PosX = e.pageX;
+                PosY = e.pageY;
+            }
+            else if (e.clientX || e.clientY) {
+                PosX = e.clientX + document.body.scrollLeft
+                    + document.documentElement.scrollLeft;
+                PosY = e.clientY + document.body.scrollTop
+                    + document.documentElement.scrollTop;
+            }
+
+            PosX = PosX - ImgPos[0];
+            PosY = PosY - ImgPos[1];
+
+            var mCordinates = PosX + "," + PosY;
+
+            $("#spCurrentXY").text(mCordinates);
+
+            $("#txtCurrentX").val(PosX);
+            $("#txtCurrentY").val(PosY);
+
+            $("#dvChairDtls").modal('show');
+        }
+
+        var myImg = document.getElementById("myImgId");
+
+        myImg.onmousedown = GetCoordinates;
+
+    </script>
+
+    <script type="text/javascript">
+
+        var mFloorMapJSON = $("#txtFloorJSON").val();
+
+        if (mFloorMapJSON != undefined && mFloorMapJSON != null) {
+            mFloorMapJSON = JSON.parse(mFloorMapJSON);
+
+            for (var i = 0; i < mFloorMapJSON.length; i++) {
+
+                var elemDiv = document.createElement('div');
+
+                elemDiv.style.cssText = 'position:absolute;width:' + mFloorMapJSON[i].width + 'px;height:' + mFloorMapJSON[i].height + 'px;background:rgba(0, 0, 255, 0.3);cursor: pointer;';
+                elemDiv.style.left = mFloorMapJSON[i].CurrentX + "px";
+                elemDiv.style.top = mFloorMapJSON[i].CurrentY + "px";
+
+                elemDiv.setAttribute("onclick", "GetSeatDtls(" + mFloorMapJSON[i].Id + ",'" + mFloorMapJSON[i].width + "','" + mFloorMapJSON[i].height + "'," +
+                    "'" + mFloorMapJSON[i].DeptId + "','" + mFloorMapJSON[i].SeatId + "','" + mFloorMapJSON[i].SeatDtls + "'," +
+                    "'" + mFloorMapJSON[i].CurrentX + "','" + mFloorMapJSON[i].CurrentY + "')");
+
+                document.getElementById('dvControls').appendChild(elemDiv);
+
+            }
+        }
+
+        function GetSeatDtls(vId, vWidth, vHeight, vDeptId, vSeatId, vSeatDtls, vCurrentX, vCurrentY) {
+
+            //$("#txtId").val(vId);
+            $("#txtWidth").val(vWidth);
+            $("#txtHeight").val(vHeight);
+            $("#ddlDept").val(vDeptId);
+            $("#txtSeatId").val(vSeatId);
+            $("#txtSeatDtls").val(vSeatDtls);
+            $("#spCurrentXY").val(vCurrentX + "," + vCurrentY);
+
+            $("#dvChairDtls").modal('show');
+        }
+                                                                                //let container = document.getElementById("container");
+                                                                                //let rectangles = document.getElementsByClassName("rectangle");
+
+
+
+                                                                                        //for (let i = 0; i < rectangles.length; i++) {
+                                                                                        //    rectangles[i].style.left = "380px";
+                                                                                        //    rectangles[i].style.width = "30px";
+                                                                                        //    rectangles[i].style.height = "25px";
+                                                                                        //    rectangles[i].style.opacity = "0.4";
+                                                                                        //}
+
+                                                                                        //rectangles[1].style.top = "422px";
+                                                                                        //rectangles[2].style.top = "475px";
+                                                                                        //rectangles[3].style.top = "520px";
+                                                                                        //rectangles[4].style.top = "565px";
+                                                                                        //rectangles[5].style.top = "614px";
+
+
+                                                                                                               //rectangles[5].style.opacity = "0.6";
+                                                                                                               //rectangles[5].style.background-color: rgba(0, 255, 0, 0.6);
+    </script>
+
+</div>

@@ -1,0 +1,257 @@
+﻿@model SMSApp.Models.SC.UserSC
+
+@{
+    ViewBag.Title = "UserRole";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/js/appjs/user/userform.js"></script>
+
+<script type="text/javascript">
+
+    function OnUserSuccess() {
+        swal({
+            title: "SUCCESS!",
+            text: "Action completed successfully",
+            type: "success",
+            confirmButtonText: "OK"
+        },
+            function (isConfirm) {
+                window.location.href = '@Url.Action("Index","User")';
+            });
+    }
+
+    function RedirectBack() {
+
+        window.location.href = '@Url.Action("Index","User")';
+
+        return false;
+    }
+
+</script>
+
+<div ng-controller="UserFormCtrl">
+
+    <form action="/User/SaveUser" data-ajax="true" data-ajax-failure="OnFailure"
+          data-ajax-method="POST" data-ajax-success="OnUserSuccess" id="form0" method="post">
+        <div class="col-12">
+            <section class="box">
+                <header class="panel_header">
+                    @if (Model != null)
+                    {
+                        <h2 class="title float-left">Edit User</h2>
+                    }
+                    else
+                    {
+                        <h2 class="title float-left">New User</h2>
+                    }
+                </header>
+                <div class="content-body">
+                    <div class="row">
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label class="form-label title">First Name</label>
+                                <div class="controls">
+                                    @Html.TextBoxFor(model => model.FNKanji, new { @class = "form-control", @placeholder = "Enter First Name", @autocomplete = "off" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label class="form-label">Last Name</label>
+                                <div class="controls">
+                                    @Html.TextBoxFor(model => model.LNKanji, new { @class = "form-control", @placeholder = "Enter Last Name", @autocomplete = "off" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @* <div class="row">
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label class="form-label">名（かな）</label>
+                                <div class="controls">
+                                    @Html.TextBoxFor(model => model.FNFurigana, new { @class = "form-control", @placeholder = "Enter First Name (Furigana)", @autocomplete = "off" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label class="form-label">姓（かな）</label>
+                                <div class="controls">
+                                    @Html.TextBoxFor(model => model.LNFurigana, new { @class = "form-control", @placeholder = "Enter Last Name (Furigana)", @autocomplete = "off" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label class="form-label">名（ローマ字）</label>
+                                <div class="controls">
+                                    @Html.TextBoxFor(model => model.FNRomaji, new { @class = "form-control", @placeholder = "Enter First Name (Romaji)", @autocomplete = "off" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label class="form-label">姓（ローマ字）</label>
+                                <div class="controls">
+                                    @Html.TextBoxFor(model => model.LNRomaji, new { @class = "form-control", @placeholder = "Enter Last Name (Romaji)", @autocomplete = "off" })
+                                </div>
+                            </div>
+                        </div>
+                    </div> *@
+                    <div class="row">
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label class="form-label">Username</label>
+                                <div class="controls">
+                                    @Html.TextBoxFor(model => model.Username, new { @class = "form-control", @placeholder = "Enter Username", @autocomplete = "off" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label class="form-label">Password</label>
+                                <div class="controls">
+                                    @Html.TextBoxFor(model => model.Password, new { @type="password", @class = "form-control", @placeholder = "Enter Password", @autocomplete = "off" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        @*<div class="col-6 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label class="form-label">権限</label>
+                                <div class="controls">
+                                    <select class="form-control" ng-model="RoleId">
+                                        <option ng-value="'0'">--Select--</option>
+                                        <option ng-selected="RoleId == item.RoleId" ng-repeat="item in RoleList" ng-value="item.RoleId">
+                                            {{item.Rolename}}
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>*@
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label class="form-label">Department</label>
+                                <div class="controls">
+                                    <select id="ddlDept" class="form-control" ng-model="DeptId" onchange="OnDeptSel();">
+                                        <option ng-value="0">--Select--</option>
+                                        <option ng-selected="DeptId == item.DeptId" ng-repeat="item in DeptList" ng-value="item.DeptId">
+                                            {{item.DeptName}}
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label class="form-label">Status</label>
+                                <div class="controls">
+                                    @Html.RadioButtonFor(model => model.Status, "1", new { @id = "rdoStatusActive", @checked = "checked" })
+                                    <label class="form-label" for="rdoStatusActive">Active</label>
+                                    @Html.RadioButtonFor(model => model.Status, "0", new { @id = "rdoStatusInActive" })
+                                    <label class="form-label" for="rdoStatusInActive">InActive</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        @*<div class="col-6 col-md-6 col-lg-6" ng-if="RoleId == '2'">
+                            <div class="form-group">
+                                <label class="form-label">フロア選択</label>
+                                <div class="controls">
+                                    <div class="input-group sm-3">
+                                        <select id="ddlFloor" class="form-control" ng-model="FlrId" onchange="OnFlrSel();">
+                                            <option ng-value="'0'">--Select--</option>
+                                            <option ng-selected="FlrId == item.FloorId" ng-repeat="item in FloorList" ng-value="item.FloorId">
+                                                {{item.FloorName}}
+                                            </option>
+                                        </select>
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button" ng-click="AddFloor();">
+                                                <span class="fa fa-plus"></span>
+                                                Add
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>*@
+                    </div>
+                    
+                    
+                    @*<div class="row">
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <table id="example-11" class="display table-sm table-sm table-bordered" cellspacing="0" width="100%">
+                                <colgroup>
+                                    <col wdith="3%" />
+                                    <col wdith="55%" />
+                                    <col wdith="35%" />
+                                    <col wdith="*" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th width="10%">Sr No</th>
+                                        <th width="45%">Floor Name </th>
+                                        <th width="35%">Select </th>
+                                        <th width="10%">Action </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="item in FormFloorList|filter:'!D'" ng-if="FormFloorList.length > 0">
+                                        <td ng-bind="item.RowId"></td>
+                                        <td ng-bind="item.FloorName"></td>
+                                        <td>
+                                            <label for="lblView{{item.RowId}}">
+                                                <input id="lblView{{item.RowId}}" ng-model="item.Select" value="Vw" type="radio" name="search-type{{item.RowId}}">
+                                                利用者
+                                            </label>
+                                            <label for="UseANDView{{item.RowId}}">
+                                                <input id="UseANDView{{item.RowId}}" ng-model="item.Select" value="UVw" type="radio" name="search-type{{item.RowId}}">
+                                                参照
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-sm" type="button" ng-click="RemoveFloor(item.RowId);">
+                                                <span class="fa fa-remove"></span>
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr ng-if="FormFloorList.length == 0">
+                                        <td colspan="4">
+                                            <span class="text text-danger">No Record(s) found</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <br />*@
+                    
+                    <div class="row">
+                        <div class="col-12 col-md-9 col-lg-8 padding-bottom-30">
+                            <div class="text-left">
+                                <button type="submit" class="btn btn-primary" onclick="return SaveUser();">Submit</button>
+                                <button type="button" class="btn" onclick="return RedirectBack();">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div>
+
+            @Html.HiddenFor(model => model.RoleId, new { @id = "txtRoleId"})
+            @Html.HiddenFor(model => model.FloorId, new { @id = "txtFloor1Id"})
+            @Html.HiddenFor(model => model.DeptId, new { @id = "txtDeptId"})
+            @Html.HiddenFor(model => model.FloorSelect, new { @id = "txtFloorSelect"})
+            @Html.HiddenFor(model => model.UserId)
+        </div>
+
+    </form>
+</div>

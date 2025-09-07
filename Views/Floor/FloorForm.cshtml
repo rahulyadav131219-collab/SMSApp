@@ -1,0 +1,130 @@
+﻿@model SMSApp.Models.SC.FloorSC
+
+@{
+    //ViewBag.Title = "UserRole";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/js/appjs/floor/floorform.js"></script>
+
+<script type="text/javascript">
+
+    function OnUserSuccess() {
+        swal({
+            title: "SUCCESS!",
+            text: "Action completed successfully",
+            type: "success",
+            confirmButtonText: "OK"
+        },
+            function (isConfirm) {
+                window.location.href = '@Url.Action("Index","Floor")';
+            });
+    }
+
+    function RedirectBack() {
+
+        window.location.href = '@Url.Action("Index", "Floor")';
+
+        return false;
+    }
+
+</script>
+
+<div ng-controller="FloorFormCtrl">
+
+    <form action="/Floor/SaveFloor" data-ajax="true" data-ajax-failure="OnFailure"
+          data-ajax-method="POST" data-ajax-success="OnUserSuccess" id="form0" method="post" enctype="multipart/form-data">
+
+        <div class="col-12">
+            <section class="box">
+                <header class="panel_header">
+                    @if (Model != null)
+                    {
+                        <h2 class="title float-left">Edit Floor</h2>
+                    }
+                    else
+                    {
+                        <h2 class="title float-left">New Floor</h2>
+                    }
+                </header>
+                <div class="content-body">
+                    <div class="row">
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label class="form-label title">Floor Name</label>
+                                <div class="controls">
+                                    @Html.TextBoxFor(model => model.FloorName, new { @class = "form-control", @placeholder = "Enter Floor Name", @autocomplete = "off" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label class="form-label">Description</label>
+                                <div class="controls">
+                                    @Html.TextBoxFor(model => model.FloorDesc, new { @class = "form-control", @placeholder = "Enter Description", @autocomplete = "off" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label class="form-label">Floor Image</label>
+                                <div class="controls">
+                                    @Html.TextBoxFor(model => model.FloorImage, new { @type="file", @class = "form-control" })
+
+                                    @if (Model != null && Model.ImageName != null)
+                                    {
+                                        <a href="@Url.Content(Model.ImagePath)">
+                                            @Model.ImageName
+                                        </a>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label class="form-label">Revision No.</label>
+                                <div class="controls">
+                                    @Html.DisplayFor(model => model.RevNO)
+                                    @Html.HiddenFor(model => model.RevNO)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    @*<div class="row">
+                    <div class="col-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                    <label class="form-label">Floor Admin</label>
+                    <div class="controls">
+                    <select id="ddlFloorAdmin" class="form-control" ng-model="FloorAdminId" onchange="OnFlrAdmnSel();">
+                    <option ng-value="'0'">--Select--</option>
+                    <option ng-selected="FloorAdminId == item.FloorAdmId" ng-repeat="item in FloorAdminList"
+                    ng-value="item.FloorAdmId">
+                    {{item.FloorAdmName}}
+                    </option>
+                    </select>
+                    </div>
+                    </div>
+                    </div>
+                    </div>*@
+                    <div class="row">
+                        <div class="col-12 col-md-9 col-lg-8 padding-bottom-30">
+                            <div class="text-left">
+                                <button type="submit" class="btn btn-primary" onclick="return SaveFloor();">Submit</button>
+                                <button type="button" class="btn" onclick="return RedirectBack();">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div>
+            @Html.HiddenFor(model => model.FloorId, new { @id = "txtFloorId"})
+            @Html.HiddenFor(model => model.FloorAdmId, new { @id = "txtFloorAdmId"})
+            @Html.HiddenFor(model => model.FloorCode, new { @id = "txtFloorCode"})
+            @Html.HiddenFor(model => model.FloorSrNO, new { @id = "txtFloorSrNo"})
+        </div>
+    </form>
+</div>

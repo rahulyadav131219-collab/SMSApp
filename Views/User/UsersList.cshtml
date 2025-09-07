@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/js/appjs/user/userview.js"></script>
+
+<script type="text/javascript">
+    function AddNewUser() {
+        window.location.href = '@Url.Action("New","User")';
+        return false;
+    }
+
+    function RedirectToEdit(vUserId)
+    {
+        window.location.href = '@Url.Action("Edit","User")' + "/" + vUserId;
+        return false;
+    }
+
+</script>
+
+<div ng-controller="UserViewCtrl">
+    <div class="col-xl-12">
+        <section class="box ">
+            <header class="panel_header">
+                <h2 class="title float-left" style="width:100% !important">
+                    <span>Manage Users</span>
+                    <button type="button" class="btn btn-xs btn-primary float-right" onclick="AddNewUser();" style="margin-right:2%">
+                        <span class="fa fa-plus">
+                            Add
+                        </span>
+                    </button>
+                </h2>
+            </header>
+            <div class="content-body">
+                <div class="row">
+                    <div class="col-12">
+                    </div>
+                    <div class="col-12">
+                        <table id="example-11" class="display table table-hover table-condensed" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Sr No</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Status</th>
+                                    <th>CreatedOn</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="item in UserList">
+                                    <td>
+                                        <span style="cursor:pointer" ng-click="RedirectUserToEdit(item.UserId);">
+                                            <i class="fa fa-edit"></i>
+                                        </span>
+                                    </td>
+                                    <td ng-bind="item.RowId"></td>
+                                    <td ng-bind="item.FNKanji"></td>
+                                    <td ng-bind="item.LNKanji"></td>
+                                    <td ng-bind="item.Status"></td>
+                                    <td ng-bind="item.CreatedOn"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

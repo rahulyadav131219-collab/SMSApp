@@ -1,0 +1,81 @@
+﻿@using Microsoft.AspNetCore.Mvc.Razor;
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor;
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/js/appjs/SeatBook/SeatBookView.js"></script>
+
+<script type="text/javascript">
+
+    function AddFloorUser() {
+        window.location.href = '@Url.Action("New","Floor")';
+        return false;
+    }
+
+</script>
+
+<div ng-controller="SeatBookViewCtrl">
+    <div class="col-xl-12">
+        <section class="box ">
+            <header class="panel_header">
+                <h2 class="title float-left" style="width:100% !important">
+                    <span>Work-at-home/work-from-home registration</span>
+                </h2>
+            </header>
+            <div class="content-body">
+                <div class="row">
+                    <div class="col-6 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <label class="form-label title">Firt Name</label>
+                            <div class="controls">
+                                <div class="input-group sm-3">
+                                    <select id="ddlFloor" class="form-control" ng-model="FloorId" ng-change="BookSeat()">
+                                        <option ng-value="'0'">--Select--</option>
+                                        <option ng-repeat="item in FloorList" ng-value="item.FloorId">
+                                            {{item.FloorName}}
+                                        </option>
+                                    </select>
+                                    @*<div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button" ng-click="BookSeat();">
+                                    <span class="fa fa-plus"></span>
+                                    Book Seat
+                                    </button>
+                                    </div>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                    </div>
+                    <div class="col-12">
+                        <table id="example-11" class="display table table-hover table-condensed" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Sr No</th>
+                                    <th>Floor Name</th>
+                                    @*<th>Created By</th>
+                                    <th>Created On</th>*@
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="item in SeatBookList">
+                                    <td ng-bind="item.RowId"></td>
+                                    <td ng-bind="item.FloorName"></td>
+                                    @*<td ng-bind="item.FloorCode"></td>*@
+                                    @*<td ng-bind="item.Name"></td>
+                                    <td ng-bind="item.CreatedOn"></td>*@
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

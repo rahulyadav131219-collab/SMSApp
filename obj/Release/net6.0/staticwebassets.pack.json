@@ -1,0 +1,681 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\SMSApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\SMSApp.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Images\\BG.png",
+      "PackagePath": "staticwebassets\\Resx\\Images\\BG.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Images\\Images.jpg",
+      "PackagePath": "staticwebassets\\Resx\\Images\\Images.jpg"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Images\\Images.png",
+      "PackagePath": "staticwebassets\\Resx\\Images\\Images.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Images\\ImagesV1.jpg",
+      "PackagePath": "staticwebassets\\Resx\\Images\\ImagesV1.jpg"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Images\\Logo.png",
+      "PackagePath": "staticwebassets\\Resx\\Images\\Logo.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Images\\Seating.png",
+      "PackagePath": "staticwebassets\\Resx\\Images\\Seating.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Images\\Seating.webp",
+      "PackagePath": "staticwebassets\\Resx\\Images\\Seating.webp"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Images\\blank-user-img.jpg",
+      "PackagePath": "staticwebassets\\Resx\\Images\\blank-user-img.jpg"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Images\\images_New.jpg",
+      "PackagePath": "staticwebassets\\Resx\\Images\\images_New.jpg"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Images\\wi-logo - Copy (2).png",
+      "PackagePath": "staticwebassets\\Resx\\Images\\wi-logo - Copy (2).png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Images\\wi-logo - Copy - Copy.png",
+      "PackagePath": "staticwebassets\\Resx\\Images\\wi-logo - Copy - Copy.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Images\\wi-logo - Copy.png",
+      "PackagePath": "staticwebassets\\Resx\\Images\\wi-logo - Copy.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Images\\wi-logo - Copy1.png",
+      "PackagePath": "staticwebassets\\Resx\\Images\\wi-logo - Copy1.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Images\\wi-logo - Copy2.png",
+      "PackagePath": "staticwebassets\\Resx\\Images\\wi-logo - Copy2.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Images\\wi-logo.png",
+      "PackagePath": "staticwebassets\\Resx\\Images\\wi-logo.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Images\\wi-logo_V1 - Copy.png",
+      "PackagePath": "staticwebassets\\Resx\\Images\\wi-logo_V1 - Copy.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Images\\wi-logo_V1.png",
+      "PackagePath": "staticwebassets\\Resx\\Images\\wi-logo_V1.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Images\\wi-logo_old.png",
+      "PackagePath": "staticwebassets\\Resx\\Images\\wi-logo_old.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Images\\wi.png",
+      "PackagePath": "staticwebassets\\Resx\\Images\\wi.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Images\\writer-information.png",
+      "PackagePath": "staticwebassets\\Resx\\Images\\writer-information.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Scripts\\jquery-1.8.2.min.js",
+      "PackagePath": "staticwebassets\\Resx\\Scripts\\jquery-1.8.2.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Scripts\\jquery.unobtrusive-ajax.js",
+      "PackagePath": "staticwebassets\\Resx\\Scripts\\jquery.unobtrusive-ajax.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Scripts\\jquery.unobtrusive-ajax.min.js",
+      "PackagePath": "staticwebassets\\Resx\\Scripts\\jquery.unobtrusive-ajax.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\Style1.css",
+      "PackagePath": "staticwebassets\\Resx\\Style1.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\_app.js",
+      "PackagePath": "staticwebassets\\Resx\\_app.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Resx\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\css\\animate.min.css",
+      "PackagePath": "staticwebassets\\Resx\\css\\animate.min.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\css\\bootstrap-datepicker3.standalone.min.css",
+      "PackagePath": "staticwebassets\\Resx\\css\\bootstrap-datepicker3.standalone.min.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\Resx\\css\\font-awesome.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\css\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\Resx\\css\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\css\\style.css",
+      "PackagePath": "staticwebassets\\Resx\\css\\style.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\css\\sweetalert.css",
+      "PackagePath": "staticwebassets\\Resx\\css\\sweetalert.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\Resx\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\Resx\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\Resx\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\Resx\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\Resx\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\Resx\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\js\\angular.min.js",
+      "PackagePath": "staticwebassets\\Resx\\js\\angular.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\js\\bootstrap-datepicker.min.js",
+      "PackagePath": "staticwebassets\\Resx\\js\\bootstrap-datepicker.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Resx\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\js\\buttons.flash.min.js",
+      "PackagePath": "staticwebassets\\Resx\\js\\buttons.flash.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\js\\buttons.html5.min.js",
+      "PackagePath": "staticwebassets\\Resx\\js\\buttons.html5.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\js\\buttons.print.min.js",
+      "PackagePath": "staticwebassets\\Resx\\js\\buttons.print.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\js\\dataTables.buttons.min.js",
+      "PackagePath": "staticwebassets\\Resx\\js\\dataTables.buttons.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\js\\jquery-1.11.2.min.js",
+      "PackagePath": "staticwebassets\\Resx\\js\\jquery-1.11.2.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\js\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\Resx\\js\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\js\\jquery.easing.min.js",
+      "PackagePath": "staticwebassets\\Resx\\js\\jquery.easing.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\js\\jquery.unobtrusive-ajax.min.js",
+      "PackagePath": "staticwebassets\\Resx\\js\\jquery.unobtrusive-ajax.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\js\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\Resx\\js\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\js\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\Resx\\js\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\js\\jszip.min.js",
+      "PackagePath": "staticwebassets\\Resx\\js\\jszip.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\js\\pace.min.js",
+      "PackagePath": "staticwebassets\\Resx\\js\\pace.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\js\\pdfmake.min.js",
+      "PackagePath": "staticwebassets\\Resx\\js\\pdfmake.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\js\\perfect-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\Resx\\js\\perfect-scrollbar.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\Resx\\js\\popper.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\Resx\\js\\scripts.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\js\\sweetalert-dev.js",
+      "PackagePath": "staticwebassets\\Resx\\js\\sweetalert-dev.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\js\\vfs_fonts.js",
+      "PackagePath": "staticwebassets\\Resx\\js\\vfs_fonts.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Resx\\js\\viewportchecker.js",
+      "PackagePath": "staticwebassets\\Resx\\js\\viewportchecker.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage7.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage7.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\01 - AdminScreenShot.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\01 - AdminScreenShot.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\01.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\01.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\02 - Homescreen.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\02 - Homescreen.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\03 - UserList.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\03 - UserList.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\1.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\1.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\10.PNG",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\10.PNG"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\11.PNG",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\11.PNG"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\12.PNG",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\12.PNG"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\13.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\13.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\14.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\14.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\15.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\15.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\16.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\16.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\17.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\17.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\18.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\18.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\19.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\19.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\2.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\2.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\20.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\20.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\21.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\21.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\22.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\22.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\23.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\23.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\24.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\24.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\25.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\25.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\26.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\26.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\27.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\27.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\28.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\28.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\29.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\29.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\3.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\3.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\30.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\30.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\31.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\31.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\32.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\32.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\4.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\4.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\5.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\5.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\8.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\8.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\9.PNG",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\9.PNG"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\HQ_6F.PNG",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\HQ_6F.PNG"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\Screenshot 2023-03-10 105706.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\Screenshot 2023-03-10 105706.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\Screenshot 2023-03-10 105719.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\Screenshot 2023-03-10 105719.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\Screenshot 2023-03-10 105841.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\Screenshot 2023-03-10 105841.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\Screenshot 2023-03-15 113431.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\Screenshot 2023-03-15 113431.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\Uploads\\FloorImage\\Screenshot 2023-03-17 100309.png",
+      "PackagePath": "staticwebassets\\Uploads\\FloorImage\\Screenshot 2023-03-17 100309.png"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\js\\AppJs\\Login\\Login.js",
+      "PackagePath": "staticwebassets\\js\\AppJs\\Login\\Login.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\js\\AppJs\\User\\UserForm.js",
+      "PackagePath": "staticwebassets\\js\\AppJs\\User\\UserForm.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\js\\AppJs\\User\\UserView.js",
+      "PackagePath": "staticwebassets\\js\\AppJs\\User\\UserView.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\App\\SMSApp-20240617T124757Z-001\\SMSApp\\Seat Mapping Code\\Source Code\\SMSApp\\SMSApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.SMSApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.SMSApp.props",
+      "PackagePath": "build\\SMSApp.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.SMSApp.props",
+      "PackagePath": "buildMultiTargeting\\SMSApp.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.SMSApp.props",
+      "PackagePath": "buildTransitive\\SMSApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

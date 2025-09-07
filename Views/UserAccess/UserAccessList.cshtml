@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/js/Appjs/UserAccess/UserAccessView.js"></script>
+
+<script type="text/javascript">
+
+    function AddUserAccess() {
+
+        window.location.href = '@Url.Action("New","UserAccess")';
+        return false;
+
+    }
+
+</script>
+
+<div ng-controller="UserAccessViewCtrl">
+    <div class="col-xl-12">
+        <section class="box ">
+            <header class="panel_header">
+                <h2 class="title float-left" style="width:100% !important">
+                    <span>Manage Users Access</span>
+                    <button type="button" class="btn btn-xs btn-primary float-right" onclick="AddUserAccess();" style="margin-right:2%">
+                        <span class="fa fa-plus">
+                            Add
+                        </span>
+                    </button>
+                </h2>
+            </header>
+            <div class="content-body">
+                <div class="row">
+                    <div class="col-12">
+                    </div>
+                    <div class="col-12">
+                        <table id="example-11" class="display table table-hover table-condensed" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Sr No</th>
+                                    <th>Floor Name</th>
+                                    <th>Floor Desc</th>
+                                    <th>Status</th>
+                                    <th>CreatedOn</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="item in UserAccessList">
+                                    <td>
+                                        <span style="cursor:pointer" ng-click="RedirectUserAccessToEdit(item.UserAccessId);">
+                                            <i class="fa fa-edit"></i>
+                                        </span>
+                                    </td>
+                                    <td ng-bind="item.RowId"></td>
+                                    <td ng-bind="item.FloorName"></td>
+                                    <td ng-bind="item.FloorDesc"></td>
+                                    <td>
+                                        <span class="mb-2 text-success" ng-bind="item.IsActive" ng-if="item.IsActive == 'Active'"></span>
+                                        <span class="mb-2 text-danger" ng-bind="item.IsActive" ng-if="item.IsActive == 'InActive'"></span>
+                                    </td>
+                                    <td ng-bind="item.CreatedOn"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
